@@ -1,0 +1,23 @@
+{
+  "name": "croud-date-parser",
+  "version": "0.0.1",
+  "description": "Date parse based on chrono",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CroudSupport/vue-semantic.git"
+  },
+  "keywords": [
+    "Date",
+    "chrono",
+  ],
+  "author": "Paul Watkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CroudSupport/vue-semantic/issues"
+  },
+  "homepage": "https://github.com/CroudSupport/vue-semantic#readme"
+}
