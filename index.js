@@ -1,4 +1,3 @@
-import chrono from 'chrono-node'
 
 module.exports = function (value, comparisonDate, option) {
 
@@ -33,6 +32,5 @@ module.exports = function (value, comparisonDate, option) {
     }
 
     return return_date;
-
 
 };
