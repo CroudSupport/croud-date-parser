@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/CroudSupport/vue-semantic.git"
   },
+  "dependencies": {
+    "chrono-node": "^1.1.6"
+  },
   "keywords": [
     "Date",
     "chrono"
