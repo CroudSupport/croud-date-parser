@@ -1,16 +1,22 @@
 
 module.exports = function (value, comparisonDate, option) {
 
-    const period_pattern = /(\+)([0-9]*)\W(months|weeks|days|week|day|month)/ig;
+    const chrono = require('chrono-node')
 
-    let myRegex = new RegExp(period_pattern),
-        matches, date;
+    const period_pattern = /(\+)([0-9]*)\W(months|weeks|days|week|day|month)/ig
 
-    if (value == '') value = 'today';
+    var myRegex = new RegExp(period_pattern),
+    matches,
+    return_date = null,
+    chrono_date;
+
+    if (value == '') {
+        value = 'today';
+    }
 
     if (myRegex.test(value)) {
 
-        myRegex = new RegExp(period_pattern)
+        myRegex = new RegExp(period_pattern);
 
         matches = myRegex.exec(value);
 
@@ -23,8 +29,7 @@ module.exports = function (value, comparisonDate, option) {
         }
     }
 
-    let chrono_date = chrono.parse(value),
-        return_date = null;
+    chrono_date = chrono.parse(value);
 
     if (chrono_date && chrono_date.length > 0) {
         if (chrono_date[0].start)
