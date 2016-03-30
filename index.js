@@ -1,9 +1,9 @@
 
 module.exports = function (value, comparisonDate, option) {
 
-    const chrono = require('chrono-node')
+    var chrono = require('chrono-node')
 
-    const period_pattern = /(\+)([0-9]*)\W(months|weeks|days|week|day|month)/ig
+    var period_pattern = /(+-)([0-9]*)\W(months|weeks|days|week|day|month)/ig
 
     var myRegex = new RegExp(period_pattern),
     matches,
