@@ -1,6 +1,6 @@
 {
   "name": "croud-date-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Date parse based on chrono",
   "main": "index.js",
   "scripts": {

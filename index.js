@@ -8,14 +8,14 @@ function parseUkFormat(value) {
     matches;
 
     if (matches = myRegexDate.exec(value)) {
-        return moment(value, `DD${matches[2]}MM${matches[4]}YYYY`);
+        return moment(value, 'DD' + matches[2] + 'MM' + matches[4] + 'YYYY');
     }
     return null
 }
 
 function parsePlusPeriods(value, comparisonDate) {
-    var period_pattern = /([+-])([0-9]*)\W(months|weeks|days|years|week|day|month|year)/ig
-    var myRegex = new RegExp(period_pattern),
+    var period_pattern = /([+-])([0-9]*)\W(months|weeks|days|years|week|day|month|year)/ig,
+    myRegex = new RegExp(period_pattern),
     matches;
 
     if (matches = myRegex.exec(value)) {
