@@ -30,7 +30,7 @@ function parsePlusPeriods(value, comparisonDate) {
     return null;
 }
 
-function parseChrono = function(value) {
+function parseChrono(value) {
     var chrono = require('chrono-node'),
     return_date = null,
     chrono_date;
