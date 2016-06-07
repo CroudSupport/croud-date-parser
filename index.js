@@ -1,6 +1,6 @@
 
 
-const parseUkFormat = function(value) {
+function parseUkFormat(value) {
 
     var date_pattern = /([0-9]{1,2})([\\/\\.\\-])([0-9]{1,2})([\\/\\.\\-])([0-9]{4}|[0-9]{2})/i,
     myRegexDate = new RegExp(date_pattern),
@@ -13,7 +13,7 @@ const parseUkFormat = function(value) {
     return null
 }
 
-const parsePlusPeriods = function(value, comparisonDate) {
+function parsePlusPeriods(value, comparisonDate) {
     var period_pattern = /([+-])([0-9]*)\W(months|weeks|days|years|week|day|month|year)/ig
     var myRegex = new RegExp(period_pattern),
     matches;
@@ -30,7 +30,7 @@ const parsePlusPeriods = function(value, comparisonDate) {
     return null;
 }
 
-const parseChrono = function(value) {
+function parseChrono = function(value) {
     var chrono = require('chrono-node'),
     return_date = null,
     chrono_date;
